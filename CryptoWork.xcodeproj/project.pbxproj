@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F34CE25A2A54161100F782EC /* CryptoWorkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34CE2592A54161100F782EC /* CryptoWorkApp.swift */; };
+		F34CE25C2A54161100F782EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34CE25B2A54161100F782EC /* ContentView.swift */; };
+		F34CE25E2A54161300F782EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F34CE25D2A54161300F782EC /* Assets.xcassets */; };
+		F34CE2612A54161300F782EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F34CE2602A54161300F782EC /* Preview Assets.xcassets */; };
+		F34CE26B2A54161400F782EC /* CryptoWorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34CE26A2A54161400F782EC /* CryptoWorkTests.swift */; };
+		F34CE2752A54161400F782EC /* CryptoWorkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34CE2742A54161400F782EC /* CryptoWorkUITests.swift */; };
+		F34CE2772A54161400F782EC /* CryptoWorkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34CE2762A54161400F782EC /* CryptoWorkUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F34CE2672A54161400F782EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F34CE24E2A54161100F782EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F34CE2552A54161100F782EC;
+			remoteInfo = CryptoWork;
+		};
+		F34CE2712A54161400F782EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F34CE24E2A54161100F782EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F34CE2552A54161100F782EC;
+			remoteInfo = CryptoWork;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F34CE2562A54161100F782EC /* CryptoWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F34CE2592A54161100F782EC /* CryptoWorkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWorkApp.swift; sourceTree = "<group>"; };
+		F34CE25B2A54161100F782EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F34CE25D2A54161300F782EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F34CE2602A54161300F782EC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F34CE2662A54161400F782EC /* CryptoWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoWorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F34CE26A2A54161400F782EC /* CryptoWorkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWorkTests.swift; sourceTree = "<group>"; };
+		F34CE2702A54161400F782EC /* CryptoWorkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoWorkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F34CE2742A54161400F782EC /* CryptoWorkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWorkUITests.swift; sourceTree = "<group>"; };
+		F34CE2762A54161400F782EC /* CryptoWorkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWorkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F34CE2532A54161100F782EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F34CE2632A54161400F782EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F34CE26D2A54161400F782EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F34CE24D2A54161100F782EC = {
+			isa = PBXGroup;
+			children = (
+				F34CE2582A54161100F782EC /* CryptoWork */,
+				F34CE2692A54161400F782EC /* CryptoWorkTests */,
+				F34CE2732A54161400F782EC /* CryptoWorkUITests */,
+				F34CE2572A54161100F782EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F34CE2572A54161100F782EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F34CE2562A54161100F782EC /* CryptoWork.app */,
+				F34CE2662A54161400F782EC /* CryptoWorkTests.xctest */,
+				F34CE2702A54161400F782EC /* CryptoWorkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F34CE2582A54161100F782EC /* CryptoWork */ = {
+			isa = PBXGroup;
+			children = (
+				F34CE2592A54161100F782EC /* CryptoWorkApp.swift */,
+				F34CE25B2A54161100F782EC /* ContentView.swift */,
+				F34CE25D2A54161300F782EC /* Assets.xcassets */,
+				F34CE25F2A54161300F782EC /* Preview Content */,
+			);
+			path = CryptoWork;
+			sourceTree = "<group>";
+		};
+		F34CE25F2A54161300F782EC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F34CE2602A54161300F782EC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F34CE2692A54161400F782EC /* CryptoWorkTests */ = {
+			isa = PBXGroup;
+			children = (
+				F34CE26A2A54161400F782EC /* CryptoWorkTests.swift */,
+			);
+			path = CryptoWorkTests;
+			sourceTree = "<group>";
+		};
+		F34CE2732A54161400F782EC /* CryptoWorkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F34CE2742A54161400F782EC /* CryptoWorkUITests.swift */,
+				F34CE2762A54161400F782EC /* CryptoWorkUITestsLaunchTests.swift */,
+			);
+			path = CryptoWorkUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F34CE2552A54161100F782EC /* CryptoWork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F34CE27A2A54161400F782EC /* Build configuration list for PBXNativeTarget "CryptoWork" */;
+			buildPhases = (
+				F34CE2522A54161100F782EC /* Sources */,
+				F34CE2532A54161100F782EC /* Frameworks */,
+				F34CE2542A54161100F782EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CryptoWork;
+			productName = CryptoWork;
+			productReference = F34CE2562A54161100F782EC /* CryptoWork.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F34CE2652A54161400F782EC /* CryptoWorkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F34CE27D2A54161400F782EC /* Build configuration list for PBXNativeTarget "CryptoWorkTests" */;
+			buildPhases = (
+				F34CE2622A54161400F782EC /* Sources */,
+				F34CE2632A54161400F782EC /* Frameworks */,
+				F34CE2642A54161400F782EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F34CE2682A54161400F782EC /* PBXTargetDependency */,
+			);
+			name = CryptoWorkTests;
+			productName = CryptoWorkTests;
+			productReference = F34CE2662A54161400F782EC /* CryptoWorkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F34CE26F2A54161400F782EC /* CryptoWorkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F34CE2802A54161400F782EC /* Build configuration list for PBXNativeTarget "CryptoWorkUITests" */;
+			buildPhases = (
+				F34CE26C2A54161400F782EC /* Sources */,
+				F34CE26D2A54161400F782EC /* Frameworks */,
+				F34CE26E2A54161400F782EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F34CE2722A54161400F782EC /* PBXTargetDependency */,
+			);
+			name = CryptoWorkUITests;
+			productName = CryptoWorkUITests;
+			productReference = F34CE2702A54161400F782EC /* CryptoWorkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F34CE24E2A54161100F782EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F34CE2552A54161100F782EC = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					F34CE2652A54161400F782EC = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = F34CE2552A54161100F782EC;
+					};
+					F34CE26F2A54161400F782EC = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = F34CE2552A54161100F782EC;
+					};
+				};
+			};
+			buildConfigurationList = F34CE2512A54161100F782EC /* Build configuration list for PBXProject "CryptoWork" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F34CE24D2A54161100F782EC;
+			productRefGroup = F34CE2572A54161100F782EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F34CE2552A54161100F782EC /* CryptoWork */,
+				F34CE2652A54161400F782EC /* CryptoWorkTests */,
+				F34CE26F2A54161400F782EC /* CryptoWorkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F34CE2542A54161100F782EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F34CE2612A54161300F782EC /* Preview Assets.xcassets in Resources */,
+				F34CE25E2A54161300F782EC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F34CE2642A54161400F782EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F34CE26E2A54161400F782EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F34CE2522A54161100F782EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F34CE25C2A54161100F782EC /* ContentView.swift in Sources */,
+				F34CE25A2A54161100F782EC /* CryptoWorkApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F34CE2622A54161400F782EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F34CE26B2A54161400F782EC /* CryptoWorkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F34CE26C2A54161400F782EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F34CE2772A54161400F782EC /* CryptoWorkUITestsLaunchTests.swift in Sources */,
+				F34CE2752A54161400F782EC /* CryptoWorkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F34CE2682A54161400F782EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F34CE2552A54161100F782EC /* CryptoWork */;
+			targetProxy = F34CE2672A54161400F782EC /* PBXContainerItemProxy */;
+		};
+		F34CE2722A54161400F782EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F34CE2552A54161100F782EC /* CryptoWork */;
+			targetProxy = F34CE2712A54161400F782EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F34CE2782A54161400F782EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F34CE2792A54161400F782EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F34CE27B2A54161400F782EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CryptoWork/Preview Content\"";
+				DEVELOPMENT_TEAM = 22TYYYJ4MX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aldi.ios.CryptoWork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F34CE27C2A54161400F782EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CryptoWork/Preview Content\"";
+				DEVELOPMENT_TEAM = 22TYYYJ4MX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aldi.ios.CryptoWork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F34CE27E2A54161400F782EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 22TYYYJ4MX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aldi.ios.CryptoWorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoWork.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CryptoWork";
+			};
+			name = Debug;
+		};
+		F34CE27F2A54161400F782EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 22TYYYJ4MX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aldi.ios.CryptoWorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoWork.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CryptoWork";
+			};
+			name = Release;
+		};
+		F34CE2812A54161400F782EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 22TYYYJ4MX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aldi.ios.CryptoWorkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CryptoWork;
+			};
+			name = Debug;
+		};
+		F34CE2822A54161400F782EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 22TYYYJ4MX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aldi.ios.CryptoWorkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CryptoWork;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F34CE2512A54161100F782EC /* Build configuration list for PBXProject "CryptoWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F34CE2782A54161400F782EC /* Debug */,
+				F34CE2792A54161400F782EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F34CE27A2A54161400F782EC /* Build configuration list for PBXNativeTarget "CryptoWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F34CE27B2A54161400F782EC /* Debug */,
+				F34CE27C2A54161400F782EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F34CE27D2A54161400F782EC /* Build configuration list for PBXNativeTarget "CryptoWorkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F34CE27E2A54161400F782EC /* Debug */,
+				F34CE27F2A54161400F782EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F34CE2802A54161400F782EC /* Build configuration list for PBXNativeTarget "CryptoWorkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F34CE2812A54161400F782EC /* Debug */,
+				F34CE2822A54161400F782EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F34CE24E2A54161100F782EC /* Project object */;
+}
