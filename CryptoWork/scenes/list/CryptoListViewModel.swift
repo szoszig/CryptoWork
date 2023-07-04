@@ -9,10 +9,10 @@ import Foundation
 import Combine
 
 class CryptoListViewModel: ObservableObject {
-    enum State {
+    enum State: Equatable {
         case loading
         case data([CryptoItem])
-        case error
+        case error(CryptoWorkError)
     }
     @Published var viewState: CryptoListViewModel.State = .loading
     
@@ -44,7 +44,10 @@ class CryptoListViewModel: ObservableObject {
             }
             .map {
                 State.data($0)
-            }.replaceError(with: CryptoListViewModel.State.error)
+            }
+            .catch{
+                Just(CryptoListViewModel.State.error($0))
+            }
             .receive(on: RunLoop.main)
             .assign(to: &$viewState)
     }

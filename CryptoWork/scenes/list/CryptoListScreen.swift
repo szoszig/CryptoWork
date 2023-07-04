@@ -32,8 +32,8 @@ struct CryptoListScreen: View {
                             .padding(.vertical, 10)
                         }
                     }
-                case .error:
-                    ErrorScreen(error: .mappingError) {
+                case .error(let error):
+                    ErrorScreen(error: error) {
                         viewModel.fetchData()
                     }
                 }

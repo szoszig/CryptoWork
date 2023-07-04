@@ -11,7 +11,7 @@ import Combine
 class CryptoDetailViewModel: ObservableObject {
     enum State: Equatable {
         case data(CryptoItem?, Bool)
-        case error
+        case error(CryptoWorkError)
     }
     @Published var viewState: CryptoDetailViewModel.State = .data(nil, true)
     
@@ -26,22 +26,25 @@ class CryptoDetailViewModel: ObservableObject {
         apiManager.fetchItem(id: data.id)
             .map { $0.data }
             .map { item in
-                    let change = Double(item.changePercent24Hr ?? "0") ?? 0
-                    return CryptoItem(
-                        id: item.id,
-                        name: item.name,
-                        symbol: item.symbol,
-                        priceUsd: Double(item.priceUsd) ?? 0,
-                        change: change,
-                        marketCap: Double(item.marketCapUsd ?? "0") ?? 0,
-                        volume: Double(item.volumeUsd24Hr ?? "0") ?? 0,
-                        supply: Double(item.supply) ?? 0,
-                        changeType: ChangeType.getType(value: change)
-                    )
-                }
+                let change = Double(item.changePercent24Hr ?? "0") ?? 0
+                return CryptoItem(
+                    id: item.id,
+                    name: item.name,
+                    symbol: item.symbol,
+                    priceUsd: Double(item.priceUsd) ?? 0,
+                    change: change,
+                    marketCap: Double(item.marketCapUsd ?? "0") ?? 0,
+                    volume: Double(item.volumeUsd24Hr ?? "0") ?? 0,
+                    supply: Double(item.supply) ?? 0,
+                    changeType: ChangeType.getType(value: change)
+                )
+            }
             .map {
                 State.data($0, false)
-            }.replaceError(with: CryptoDetailViewModel.State.error)
+            }
+            .catch{
+                Just(CryptoDetailViewModel.State.error($0))
+            }
             .receive(on: RunLoop.main)
             .assign(to: &$viewState)
     }

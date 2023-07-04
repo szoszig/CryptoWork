@@ -30,6 +30,9 @@ class APIManager: IAPIManager {
     }
     
     private func fetch<Data: Decodable>(urlString: String, queryItems: [URLQueryItem] = []) -> AnyPublisher<Data, CryptoWorkError> {
+        guard Reachability.isConnectedToNetwork() else {
+            return Fail(error: CryptoWorkError.offline).eraseToAnyPublisher()
+        }
         guard var url = URL(string: urlString) else {
             return Fail(error: CryptoWorkError.invalidRequest("invalid url")).eraseToAnyPublisher()
         }
@@ -37,7 +40,7 @@ class APIManager: IAPIManager {
             url.append(queryItems: queryItems)
         }
         return URLSession.shared.dataTaskPublisher(for: url)
-            .mapError { CryptoWorkError.transportError($0) }
+            .mapError { _ in CryptoWorkError.transportError }
             .map(\.data)
             .decode(type: Data.self, decoder: JSONDecoder())
             .mapError { error in CryptoWorkError.mappingError }

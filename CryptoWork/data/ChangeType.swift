@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum ChangeType {
+enum ChangeType: Equatable {
     case up
     case down
     case stationary

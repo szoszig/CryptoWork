@@ -14,8 +14,8 @@ struct CryptoDetailScreen: View {
     var body: some View {
         ZStack {
             switch viewModel.viewState {
-            case .error:
-                ErrorScreen(error: .mappingError) {
+            case .error(let error):
+                ErrorScreen(error: error) {
                     viewModel.fetchData(data: data)
                 }
             case .data(let data, let isLoading):
@@ -79,6 +79,7 @@ extension CryptoDetailScreen {
         .background(
             RoundedRectangle(cornerRadius: 16)
                 .foregroundColor(Color("aldi_white"))
+                .opacity(0.4)
                 
         )
         .overlay(

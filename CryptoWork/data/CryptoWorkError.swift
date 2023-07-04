@@ -7,8 +7,30 @@
 
 import Foundation
 
-enum CryptoWorkError: LocalizedError {
+enum CryptoWorkError: LocalizedError, Equatable {
+    case offline
     case invalidRequest(String)
-    case transportError(Error)
+    case transportError
     case mappingError
+    
+    var title: String {
+        switch self {
+        case .offline:
+            return "No internet connection"
+        case .invalidRequest(_):
+            return "Invalid request"
+        case .transportError:
+            return "Transport error"
+        case .mappingError:
+            return "Data mapping failed"
+        }
+    }
+    var imageName: String {
+        switch self {
+        case .offline:
+            return "wifi.exclamationmark"
+        default:
+            return "wrongwaysign"
+        }
+    }
 }
