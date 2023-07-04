@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct CryptoData: Decodable {
+struct CryptoListData: Decodable {
     let data: [CryptoItemData]
 }

@@ -9,8 +9,8 @@ import Foundation
 import Combine
 
 protocol IAPIManager {
-    func fetchList() -> AnyPublisher<CryptoData, CryptoWorkError>
-    func fetchItem(id: String) -> AnyPublisher<CryptoItemData, CryptoWorkError>
+    func fetchList() -> AnyPublisher<CryptoListData, CryptoWorkError>
+    func fetchItem(id: String) -> AnyPublisher<CryptoSingleData, CryptoWorkError>
 }
 
 class APIManager: IAPIManager {
@@ -18,14 +18,14 @@ class APIManager: IAPIManager {
     
     private init() { }
     
-    func fetchList() -> AnyPublisher<CryptoData, CryptoWorkError> {
+    func fetchList() -> AnyPublisher<CryptoListData, CryptoWorkError> {
         return fetch(
             urlString: "https://api.coincap.io/v2/assets",
             queryItems: [URLQueryItem(name: "limit", value: "\(Constants.topCryptoLimit)")]
         )
     }
     
-    func fetchItem(id: String) -> AnyPublisher<CryptoItemData, CryptoWorkError> {
+    func fetchItem(id: String) -> AnyPublisher<CryptoSingleData, CryptoWorkError> {
         return fetch(urlString: "https://api.coincap.io/v2/assets/\(id)")
     }
     

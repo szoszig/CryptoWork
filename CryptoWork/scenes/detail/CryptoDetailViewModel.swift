@@ -1,5 +1,5 @@
 //
-//  CryptoListViewModel.swift
+//  CryptoDetailViewModel.swift
 //  CryptoWork
 //
 //  Created by Gergely Szoke on 2023. 07. 04..
@@ -8,13 +8,12 @@
 import Foundation
 import Combine
 
-class CryptoListViewModel: ObservableObject {
-    enum State {
-        case loading
-        case data([CryptoItem])
+class CryptoDetailViewModel: ObservableObject {
+    enum State: Equatable {
+        case data(CryptoItem?, Bool)
         case error
     }
-    @Published var viewState: CryptoListViewModel.State = .loading
+    @Published var viewState: CryptoDetailViewModel.State = .data(nil, true)
     
     private var apiManager: IAPIManager
     
@@ -22,12 +21,11 @@ class CryptoListViewModel: ObservableObject {
         self.apiManager = apiManager
     }
     
-    func fetchData() {
-        viewState = .loading
-        
-        apiManager.fetchList()
-            .map {
-                $0.data.map { item in
+    func fetchData(data: CryptoItem) {
+        viewState = .data(data, true)
+        apiManager.fetchItem(id: data.id)
+            .map { $0.data }
+            .map { item in
                     let change = Double(item.changePercent24Hr ?? "0") ?? 0
                     return CryptoItem(
                         id: item.id,
@@ -41,10 +39,9 @@ class CryptoListViewModel: ObservableObject {
                         changeType: ChangeType.getType(value: change)
                     )
                 }
-            }
             .map {
-                State.data($0)
-            }.replaceError(with: CryptoListViewModel.State.error)
+                State.data($0, false)
+            }.replaceError(with: CryptoDetailViewModel.State.error)
             .receive(on: RunLoop.main)
             .assign(to: &$viewState)
     }

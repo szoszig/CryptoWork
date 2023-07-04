@@ -23,7 +23,7 @@
 		F35E6B892A541C3A00C0727C /* CryptoWorkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E6B882A541C3A00C0727C /* CryptoWorkError.swift */; };
 		F35E6B8B2A541C8D00C0727C /* ChangeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E6B8A2A541C8D00C0727C /* ChangeType.swift */; };
 		F35E6B8E2A541D2500C0727C /* CryptoItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E6B8D2A541D2500C0727C /* CryptoItemData.swift */; };
-		F35E6B902A541D4500C0727C /* CryptoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E6B8F2A541D4500C0727C /* CryptoData.swift */; };
+		F35E6B902A541D4500C0727C /* CryptoListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E6B8F2A541D4500C0727C /* CryptoListData.swift */; };
 		F35E6B932A541D8900C0727C /* CryptoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E6B922A541D8900C0727C /* CryptoItem.swift */; };
 		F35E6B952A541EE600C0727C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E6B942A541EE600C0727C /* Constants.swift */; };
 		F35E6B972A541F4E00C0727C /* CryptoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E6B962A541F4E00C0727C /* CryptoListViewModel.swift */; };
@@ -34,6 +34,8 @@
 		F35E6BA42A5426B300C0727C /* CryptoListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E6BA32A5426B300C0727C /* CryptoListItemView.swift */; };
 		F35E6BA72A543D3300C0727C /* CryptoLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E6BA62A543D3300C0727C /* CryptoLogo.swift */; };
 		F35E6BA92A54404100C0727C /* CryptoDetailRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E6BA82A54404100C0727C /* CryptoDetailRowView.swift */; };
+		F35E6BAD2A545C9800C0727C /* CryptoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E6BAC2A545C9800C0727C /* CryptoDetailViewModel.swift */; };
+		F35E6BAF2A5465F200C0727C /* CryptoSingleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E6BAE2A5465F200C0727C /* CryptoSingleData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +76,7 @@
 		F35E6B882A541C3A00C0727C /* CryptoWorkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWorkError.swift; sourceTree = "<group>"; };
 		F35E6B8A2A541C8D00C0727C /* ChangeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeType.swift; sourceTree = "<group>"; };
 		F35E6B8D2A541D2500C0727C /* CryptoItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoItemData.swift; sourceTree = "<group>"; };
-		F35E6B8F2A541D4500C0727C /* CryptoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoData.swift; sourceTree = "<group>"; };
+		F35E6B8F2A541D4500C0727C /* CryptoListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListData.swift; sourceTree = "<group>"; };
 		F35E6B922A541D8900C0727C /* CryptoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoItem.swift; sourceTree = "<group>"; };
 		F35E6B942A541EE600C0727C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F35E6B962A541F4E00C0727C /* CryptoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListViewModel.swift; sourceTree = "<group>"; };
@@ -85,6 +87,8 @@
 		F35E6BA32A5426B300C0727C /* CryptoListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListItemView.swift; sourceTree = "<group>"; };
 		F35E6BA62A543D3300C0727C /* CryptoLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoLogo.swift; sourceTree = "<group>"; };
 		F35E6BA82A54404100C0727C /* CryptoDetailRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailRowView.swift; sourceTree = "<group>"; };
+		F35E6BAC2A545C9800C0727C /* CryptoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailViewModel.swift; sourceTree = "<group>"; };
+		F35E6BAE2A5465F200C0727C /* CryptoSingleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoSingleData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +223,7 @@
 			children = (
 				F35E6B832A541BC300C0727C /* CryptoDetailScreen.swift */,
 				F35E6BA82A54404100C0727C /* CryptoDetailRowView.swift */,
+				F35E6BAC2A545C9800C0727C /* CryptoDetailViewModel.swift */,
 			);
 			path = detail;
 			sourceTree = "<group>";
@@ -240,7 +245,8 @@
 			isa = PBXGroup;
 			children = (
 				F35E6B8D2A541D2500C0727C /* CryptoItemData.swift */,
-				F35E6B8F2A541D4500C0727C /* CryptoData.swift */,
+				F35E6B8F2A541D4500C0727C /* CryptoListData.swift */,
+				F35E6BAE2A5465F200C0727C /* CryptoSingleData.swift */,
 			);
 			path = responses;
 			sourceTree = "<group>";
@@ -408,6 +414,7 @@
 				F35E6B972A541F4E00C0727C /* CryptoListViewModel.swift in Sources */,
 				F35E6B952A541EE600C0727C /* Constants.swift in Sources */,
 				F35E6B8E2A541D2500C0727C /* CryptoItemData.swift in Sources */,
+				F35E6BAD2A545C9800C0727C /* CryptoDetailViewModel.swift in Sources */,
 				F35E6B8B2A541C8D00C0727C /* ChangeType.swift in Sources */,
 				F34CE25A2A54161100F782EC /* CryptoWorkApp.swift in Sources */,
 				F35E6B9D2A54222100C0727C /* Double+extension.swift in Sources */,
@@ -415,12 +422,13 @@
 				F35E6B9B2A54213100C0727C /* ErrorScreen.swift in Sources */,
 				F35E6B872A541BFE00C0727C /* APIManager.swift in Sources */,
 				F35E6B932A541D8900C0727C /* CryptoItem.swift in Sources */,
-				F35E6B902A541D4500C0727C /* CryptoData.swift in Sources */,
+				F35E6B902A541D4500C0727C /* CryptoListData.swift in Sources */,
 				F35E6B822A541BB600C0727C /* CryptoListScreen.swift in Sources */,
 				F35E6B992A5420DE00C0727C /* EmptyScreen.swift in Sources */,
 				F35E6BA72A543D3300C0727C /* CryptoLogo.swift in Sources */,
 				F35E6B892A541C3A00C0727C /* CryptoWorkError.swift in Sources */,
 				F35E6B842A541BC300C0727C /* CryptoDetailScreen.swift in Sources */,
+				F35E6BAF2A5465F200C0727C /* CryptoSingleData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,13 +594,13 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aldi.ios.CryptoWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -616,13 +624,13 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aldi.ios.CryptoWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

@@ -12,33 +12,42 @@ struct CryptoListScreen: View {
     
     var body: some View {
         NavigationView {
-            if let error = viewModel.cryptoError {
-                ErrorScreen(error: error) {
-                    viewModel.fetchData()
-                }
-            } else {
-                if viewModel.list.isEmpty {
-                    EmptyScreen()
-                } else {
-                    ScrollView {
-                        VStack (spacing: 16) {
-                            ForEach(viewModel.list, id: \.self) { item in
-                                NavigationLink(destination: CryptoDetailScreen(data: item)) {
-                                    CryptoListItemView(data: item)
+            ZStack {
+                switch viewModel.viewState {
+                case .loading:
+                    ProgressView()
+                case .data(let data):
+                    if data.isEmpty {
+                        EmptyScreen()
+                    } else {
+                        ScrollView {
+                            VStack (spacing: 16) {
+                                ForEach(data, id: \.self) { item in
+                                    NavigationLink(destination: CryptoDetailScreen(data: item)) {
+                                        CryptoListItemView(data: item)
+                                    }
+                                    .buttonStyle(PlainButtonStyle())
                                 }
-                                .buttonStyle(PlainButtonStyle())
                             }
+                            .padding(.vertical, 10)
                         }
-                        .padding(.vertical, 10)
                     }
-                    .applyCommonGradientBackground()
-                    .toolbar {
-                        ToolbarItem(placement: .navigationBarLeading) {
-                            navbarTitle
-                        }
+                case .error:
+                    ErrorScreen(error: .mappingError) {
+                        viewModel.fetchData()
                     }
                 }
+                
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .applyCommonGradientBackground()
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        navbarTitle
+                    }
+                }
+        }.onAppear {
+            viewModel.fetchData()
         }
     }
 }
