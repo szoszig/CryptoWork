@@ -32,11 +32,15 @@ class APIManager: IAPIManager {
         guard Reachability.isConnectedToNetwork() else {
             return Fail(error: CryptoWorkError.offline).eraseToAnyPublisher()
         }
-        guard var url = URL(string: urlString) else {
+        
+        guard var urlComponents = URLComponents(string: urlString) else {
             return Fail(error: CryptoWorkError.invalidRequest("invalid url")).eraseToAnyPublisher()
         }
         if !queryItems.isEmpty {
-            url.append(queryItems: queryItems)
+            urlComponents.queryItems = queryItems
+        }
+        guard let url = urlComponents.url else {
+            return Fail(error: CryptoWorkError.invalidRequest("invalid url")).eraseToAnyPublisher()
         }
         return URLSession.shared.dataTaskPublisher(for: url)
             .mapError { _ in CryptoWorkError.transportError }
