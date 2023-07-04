@@ -37,6 +37,9 @@
 		F35E6BAD2A545C9800C0727C /* CryptoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E6BAC2A545C9800C0727C /* CryptoDetailViewModel.swift */; };
 		F35E6BAF2A5465F200C0727C /* CryptoSingleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E6BAE2A5465F200C0727C /* CryptoSingleData.swift */; };
 		F35E6BB12A5469E800C0727C /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E6BB02A5469E800C0727C /* Reachability.swift */; };
+		F3B43FCB2A54B6D70032605C /* DummyDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B43FCA2A54B6D70032605C /* DummyDatas.swift */; };
+		F3B43FCD2A54B7150032605C /* MockAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B43FCC2A54B7150032605C /* MockAPIManager.swift */; };
+		F3B43FCF2A54B78D0032605C /* XCTestCase+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B43FCE2A54B78D0032605C /* XCTestCase+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +94,9 @@
 		F35E6BAC2A545C9800C0727C /* CryptoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailViewModel.swift; sourceTree = "<group>"; };
 		F35E6BAE2A5465F200C0727C /* CryptoSingleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoSingleData.swift; sourceTree = "<group>"; };
 		F35E6BB02A5469E800C0727C /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		F3B43FCA2A54B6D70032605C /* DummyDatas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyDatas.swift; sourceTree = "<group>"; };
+		F3B43FCC2A54B7150032605C /* MockAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIManager.swift; sourceTree = "<group>"; };
+		F3B43FCE2A54B78D0032605C /* XCTestCase+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +174,9 @@
 			isa = PBXGroup;
 			children = (
 				F34CE26A2A54161400F782EC /* CryptoWorkTests.swift */,
+				F3B43FCA2A54B6D70032605C /* DummyDatas.swift */,
+				F3B43FCC2A54B7150032605C /* MockAPIManager.swift */,
+				F3B43FCE2A54B78D0032605C /* XCTestCase+extension.swift */,
 			);
 			path = CryptoWorkTests;
 			sourceTree = "<group>";
@@ -440,7 +449,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3B43FCF2A54B78D0032605C /* XCTestCase+extension.swift in Sources */,
+				F3B43FCB2A54B6D70032605C /* DummyDatas.swift in Sources */,
 				F34CE26B2A54161400F782EC /* CryptoWorkTests.swift in Sources */,
+				F3B43FCD2A54B7150032605C /* MockAPIManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

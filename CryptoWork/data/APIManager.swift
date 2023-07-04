@@ -15,18 +15,17 @@ protocol IAPIManager {
 
 class APIManager: IAPIManager {
     static let shared = APIManager()
-    
     private init() { }
     
     func fetchList() -> AnyPublisher<CryptoListData, CryptoWorkError> {
         return fetch(
-            urlString: "https://api.coincap.io/v2/assets",
+            urlString: Constants.endpoint,
             queryItems: [URLQueryItem(name: "limit", value: "\(Constants.topCryptoLimit)")]
         )
     }
     
     func fetchItem(id: String) -> AnyPublisher<CryptoSingleData, CryptoWorkError> {
-        return fetch(urlString: "https://api.coincap.io/v2/assets/\(id)")
+        return fetch(urlString: Constants.endpoint + "/\(id)")
     }
     
     private func fetch<Data: Decodable>(urlString: String, queryItems: [URLQueryItem] = []) -> AnyPublisher<Data, CryptoWorkError> {

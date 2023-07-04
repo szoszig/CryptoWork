@@ -9,6 +9,7 @@ import Foundation
 
 enum Constants {
     static let topCryptoLimit = 10
+    static let endpoint = "https://api.coincap.io/v2/assets"
     
     enum Number {
         static let thousand = 1000.0
